@@ -142,7 +142,6 @@ function mirrorMouseY(e) {
     var y = e.pageY - (pointer.clientHeight / 2);
     var invertedY = document.body.clientHeight - y; 
 		pointer.style.transform = "translate(" + x + "px," + invertedY + "px)";
-		pointer.style.visibility = 'visible';
 }
 
 var MouseX = '45%';
@@ -172,7 +171,6 @@ function floatMouse() {
 		var floatY = MouseY+positionY-(floatRange/2);
 		var floatX = MouseX+positionX-(floatRange/2);
     pointer.style.transform = "translate(" + floatX + "px," + floatY + "px)";
-		pointer.style.visibility = 'visible';
 }
 
 var btY = 0.6;
